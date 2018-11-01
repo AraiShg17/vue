@@ -1,0 +1,120 @@
+@charset "utf-8";
+.load-enter-active ,.load-leave-active {
+  $load : .15s;
+  transition: all $load;
+  position: relative;
+  &::before{
+    opacity: 0;
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 9999999999;
+    background-color: #fff;
+    transition: all $load linear;
+  }
+  &::after{
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+    height: 2px;
+    z-index: 9999999999;
+    transform-origin: left center;
+    transform: scale(0,1);
+    background-color: #50A0F4;
+    transition: all $load linear;
+  }
+}
+.load-enter-active {
+  &::after{
+    transform: scale(0,1);
+    transform-origin: right center;
+  }
+}
+.load-leave-active {
+  &::after{
+    transform: scale(0,1);
+    transform-origin: left center;
+  }
+}
+
+.load-enter {
+  &::before{
+    opacity: 1;
+  }
+  &::after{
+    transform: scale(1,1);
+  }
+}
+.load-leave-to {
+  &::before{
+    opacity: 1;
+  }
+  &::after{
+    transform: scale(1,1);
+  }
+}
+
+
+.data-enter-active, .data-leave-active {
+  transition: all .4s;
+  transform: scale(1);
+}
+.data-enter-active{
+   transform-origin: left top;
+}
+.data-leave-active {
+  transform-origin: right top;
+}
+.data-enter {
+  transform: scale(0);
+}
+.data-leave-to {
+  transform: scale(0);
+}
+
+
+.fade-enter-active, .fade-leave-active {
+  transition: all .1s;
+}
+.fade-enter {
+	opacity: 0;
+	transform-origin: center;
+	transform: translateX(-20px);
+}
+.fade-leave-to {
+	opacity: 0;
+	transform-origin: center;
+	transform: translateX(20px);
+}
+
+
+.err-enter-active, .err-leave-active {
+  transition: all .2s;
+}
+.err-enter {
+	opacity: 0;
+}
+.err-leave-to {
+	opacity: 0;
+}
+
+
+.modal-enter-active, .modal-leave-active {
+  transition: all .2s ease;
+}
+.modal-enter {
+  opacity: 0;
+  transform-origin: center;
+  transform: scale(.8);
+}
+.modal-leave-to {
+  opacity: 0;
+  transform-origin: center;
+}
