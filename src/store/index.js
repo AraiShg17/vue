@@ -31,7 +31,10 @@ export default new Vuex.Store({
       'limit': 0
     },
     /* データページ */
-    data: null
+    data: {
+      id: null,
+      slot: null
+    }
   },
 
   getters: {

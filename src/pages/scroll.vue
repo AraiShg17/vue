@@ -76,7 +76,6 @@ export default {
   },
   updated () {
     onScroll()
-    console.log(this.$store.state.article.current, this.$store.state.article.limit)
     if (this.$store.state.article.current < this.$store.state.article.limit) {
       if (this.$store.getters.height === this.$store.getters.scroll) {
         if (this.limit !== document.getElementById('js-scroll-list').children.length + 1) {

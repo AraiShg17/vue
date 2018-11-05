@@ -40,7 +40,6 @@ const axiosSet = (_this, id) => {
   id = _this.$store.getters.user
 
   store.commit('setMask', true)
-
   axios
     .get(getURL)
     .then((response) => {
@@ -173,6 +172,30 @@ export default {
           bottom: -20px;
           opacity: 1;
         }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .user{
+    padding: 10px 0;
+    font-size: 1.2rem;
+    &_ttl{
+      flex: 0 1 100px;
+      padding: 10px;
+    }
+    &_body{
+      flex: 1 1 calc(100% - 100px);
+      padding: 10px;
+    }
+
+    &Select{
+      margin-bottom: 20px;
+      &_list{
+        padding: 0 10px 0 0;
+      }
+      &_btn{
+        font-size: 1.4rem;
       }
     }
   }

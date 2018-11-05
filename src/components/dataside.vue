@@ -19,6 +19,7 @@ export default {
   methods: {
     /* ステートの書き換え方1 */
     click (val) {
+      console.log(val.id)
       store.commit('setData', val)
       this.current = this.$store.getters.data
     }
@@ -43,6 +44,7 @@ export default {
       padding: 12px 15px;
       color: #50A0F4;
       position: relative;
+      font-size: 1.2rem;
 
       transition: all .2s ease;
 
@@ -77,6 +79,14 @@ export default {
           transform-origin: left center;
           transform: scale(1, 1);
         }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .dataside{
+      &_link {
+        font-size: 1rem;
+        padding: 8px 10px;
       }
     }
   }

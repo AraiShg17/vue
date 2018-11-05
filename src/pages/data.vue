@@ -52,4 +52,18 @@ export default {
       flex: 1 1 auto;
     }
   }
+  @media screen and (max-width: 768px) {
+    .data{
+      &_side{
+        flex: 0 0 30%;
+        word-wrap: break-word;
+        word-break: break-all;
+      }
+      &_main{
+        flex: 1 1 auto;
+        word-wrap: break-word;
+        word-break: break-all;
+      }
+    }
+  }
 </style>

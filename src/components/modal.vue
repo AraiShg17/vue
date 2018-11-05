@@ -85,4 +85,21 @@ export default {
       transform: translateY(0px);
     }
   }
+  @media screen and (max-width: 768px) {
+    .modal{
+
+      &_inner{
+        padding: 15px;
+      }
+      &_main{
+        margin-bottom: 15px;
+      }
+      &_btn{
+        margin: 0 -5px;
+      }
+      &_list{
+        margin: 0 5px;
+      }
+    }
+  }
 </style>

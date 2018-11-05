@@ -63,20 +63,15 @@
 
 
 .data-enter-active, .data-leave-active {
-  transition: all .4s;
-  transform: scale(1);
-}
-.data-enter-active{
-   transform-origin: left top;
-}
-.data-leave-active {
-  transform-origin: right top;
+  transition: all 0s;
+  transform: translateX(0px);
+  opacity: 1;
 }
 .data-enter {
-  transform: scale(0);
+  opacity: 0;
 }
 .data-leave-to {
-  transform: scale(0);
+  opacity: 0;
 }
 
 

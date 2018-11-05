@@ -74,4 +74,11 @@ export default {
       margin-bottom: 40px;
     }
   }
+  @media screen and (max-width: 768px) {
+    .form{
+      &_box{
+        margin-bottom: 20px;
+      }
+    }
+  }
 </style>

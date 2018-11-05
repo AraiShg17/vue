@@ -69,4 +69,12 @@ export default {
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .input{
+    &_text{
+      font-size: 1.4rem;
+      padding: 5px 10px;
+    }
+  }
+}
 </style>

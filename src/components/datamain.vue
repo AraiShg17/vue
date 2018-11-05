@@ -35,4 +35,9 @@ export default {
   margin: 0 0 0 25px;
   overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+  .datamain{
+    margin: 0 0 0 15px;
+  }
+}
 </style>

@@ -68,4 +68,12 @@ export default {
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .textarea{
+    &_text{
+      font-size: 1.4rem;
+      padding: 5px 10px;
+    }
+  }
+}
 </style>

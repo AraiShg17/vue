@@ -40,4 +40,18 @@ export default {
     margin-bottom: 120px;
   }
 }
+@media screen and (max-width: 768px) {
+  .hello{
+    left: 15px;
+    right: 15px;
+    &_ttl{
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    &_txt{
+      font-size: 1.6rem;
+      margin-bottom: 60px;
+    }
+  }
+}
 </style>

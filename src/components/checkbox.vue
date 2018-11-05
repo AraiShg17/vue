@@ -109,4 +109,31 @@ export default {
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .checkbox{
+    &_inr{
+      font-size: 1.4rem;
+      flex-flow: row wrap;
+    }
+    &_ttl{
+      flex: 1 1 100%;
+      padding: 5px 10px 5px 0;
+    }
+    &_label{
+      padding: 5px 15px 5px 0;
+    }
+    &_body{
+    }
+
+    &_input{
+      width: 15px;
+      height: 15px;
+      &::after{
+        width: 8px;
+        height: 8px;
+      }
+
+    }
+  }
+}
 </style>

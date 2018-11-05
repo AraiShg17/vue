@@ -6,27 +6,27 @@
       <nav class="layout_nav">
         <ul class="layout_nav_unit">
           <li class="layout_nav_list">
-            <router-link class="layout_nav_link" to="/" exact>
+            <router-link class="layout_nav_link" to="./" exact>
               <span class="layout_nav_link_in">HOME</span>
             </router-link>
           </li>
           <li class="layout_nav_list">
-            <router-link class="layout_nav_link" to="/axios">
+            <router-link class="layout_nav_link" to="./axios">
               <span class="layout_nav_link_in">AXIOS</span>
             </router-link>
           </li>
           <li class="layout_nav_list">
-            <router-link class="layout_nav_link" to="/form">
+            <router-link class="layout_nav_link" to="./form">
               <span class="layout_nav_link_in">FORM</span>
             </router-link>
           </li>
           <li class="layout_nav_list">
-            <router-link class="layout_nav_link" to="/scroll">
+            <router-link class="layout_nav_link" to="./scroll">
               <span class="layout_nav_link_in">SCROLL</span>
             </router-link>
           </li>
           <li class="layout_nav_list">
-            <router-link class="layout_nav_link" to="/data">
+            <router-link class="layout_nav_link" to="./data">
               <span class="layout_nav_link_in">DATA</span>
             </router-link>
           </li>
@@ -134,6 +134,50 @@ export default {
       display: inline-block;
       font-size: 1.4rem;
       padding: 10px 30px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .layout{
+
+    &_header{
+      flex-flow:row wrap;
+      padding: 10px 15px;
+
+      &_logo{
+        flex: 1 1 100%;
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    }
+
+    &_nav{
+      flex: 1 1 100%;
+      &_unit {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+      }
+      &_list{
+        padding: 0 5px 0 0;
+        flex: 0 0 auto;
+      }
+      &_link{
+        padding: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &_main{
+      padding: 20px 15px;
+    }
+
+    &_footer{
+      padding: 10px 15px;
+      &_copy{
+        font-size: 1.2rem;
+        padding: 0;
+      }
     }
   }
 }

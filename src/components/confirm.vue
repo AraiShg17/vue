@@ -58,4 +58,21 @@ export default {
     padding-right: 10px;
   }
 }
+@media screen and (max-width: 768px) {
+  .confirm{
+    &_unit{
+      font-size: 1.2rem;
+    }
+    &_ttl{
+      padding: 10px;
+      flex: 0 0 100px;
+    }
+    &_body{
+      padding: 10px;
+      flex: 1 1 calc(100% - 100px);
+    }
+    &_item{
+    }
+  }
+}
 </style>

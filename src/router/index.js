@@ -12,27 +12,27 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/',
+      path: '/vue/',
       name: 'index',
       component: Index
     },
     {
-      path: '/axios',
+      path: '/vue/axios',
       name: 'axios',
       component: Page
     },
     {
-      path: '/form',
+      path: '/vue/form',
       name: 'form',
       component: Form
     },
     {
-      path: '/scroll',
+      path: '/vue/scroll',
       name: 'scroll',
       component: Scroll
     },
     {
-      path: '/data',
+      path: '/vue/data',
       name: 'data',
       component: Data
     }

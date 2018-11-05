@@ -4,7 +4,7 @@
     <p class="datamainpage_box">
       このページの解説文などをここに入力します。ページごとにレイアウトなどが完全に違っても良いようにコンポーネントを完全に切り離して作成しています。
     </p>
-    <div class="datamainpage_box"><img src="/static/images/data/page1/img_sample01.png" alt=""></div>
+    <div class="datamainpage_box"><img src="../../static/images/data/page1/img_sample01.png" alt=""></div>
   </div>
 </template>
 
@@ -63,6 +63,35 @@ export default {
   &_box{
     margin-bottom: 25px;
     font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .datamainpage{
+    &_ttl{
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+
+      &_icon {
+        width: 10px;
+        height: 10px;
+        margin-right: 8px;
+
+        &::after{
+          left: -2px;
+          width: 5px;
+          height: 5px;
+        }
+
+        &::before{
+          width: 2px;
+          height: 2px;
+        }
+      }
+    }
+    &_box{
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
   }
 }
 </style>

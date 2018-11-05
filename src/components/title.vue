@@ -43,4 +43,17 @@ export default {
     margin-bottom: 20px;
   }
 }
+@media screen and (max-width: 768px) {
+  .title{
+    margin-bottom: 20px;
+    &_h{
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    &_txt{
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+    }
+  }
+}
 </style>

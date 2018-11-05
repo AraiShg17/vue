@@ -53,7 +53,7 @@ export default {
       position: relative;
       &::before{
         content: "";
-        background: url(/static/images/icon/icon_person.svg) left center / contain no-repeat;
+        background: url(../../static/images/icon/icon_person.svg) left center / contain no-repeat;
         width: 30px;
         height: 30px;
         display: inline-block;
@@ -99,6 +99,54 @@ export default {
   &_txt{
     font-size: 1.6rem;
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .article{
+    padding-bottom: 20px;
+    &_ttl{
+      font-size: 1.6rem;
+      padding: 5px;
+      margin-bottom: 15px;
+    }
+    &_edit{
+      margin-bottom: 15px;
+
+      &_user{
+        font-size: 1.2rem;
+        &::before{
+          width: 20px;
+          height: 20px;
+          margin-right: 8px;
+        }
+      }
+      &_day{
+        font-size: 1.2rem;
+      }
+    }
+    &_keyword{
+      margin: 0 0 8px;
+      &_list{
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+        padding: 3px 10px;
+        margin-right: 8px;
+      }
+    }
+    &_icatch{
+      margin-bottom: 10px;
+    }
+    &_leda{
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+    }
+    &_img{
+      margin-bottom: 15px;
+    }
+    &_txt{
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
   }
 }
 </style>
