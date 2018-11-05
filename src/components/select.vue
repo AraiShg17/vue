@@ -51,7 +51,7 @@ export default {
 <style lang="scss" scoped>
 .select{
   &_text{
-    background: #efefef url(../../static/images/icon/icon_dropdown.svg) calc(100% - 10px) center / 20px auto no-repeat;
+    background: #efefef url(/static/images/icon/icon_dropdown.svg) calc(100% - 10px) center / 20px auto no-repeat;
     font-size: 1.6rem;
     border-radius: 5px;
     padding: 10px 35px 10px 15px;

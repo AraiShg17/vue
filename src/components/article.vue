@@ -53,7 +53,7 @@ export default {
       position: relative;
       &::before{
         content: "";
-        background: url(../../static/images/icon/icon_person.svg) left center / contain no-repeat;
+        background: url(/static/images/icon/icon_person.svg) left center / contain no-repeat;
         width: 30px;
         height: 30px;
         display: inline-block;

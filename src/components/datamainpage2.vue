@@ -4,7 +4,7 @@
     <p class="datamainpage_box">
       このページの解説文などをここに入力します。ページごとにレイアウトなどが完全に違っても良いようにコンポーネントを完全に切り離して作成しています。
     </p>
-    <div class="datamainpage_box"><img src="../../static/images/data/page1/img_sample01.png" alt=""></div>
+    <div class="datamainpage_box"><img src="/static/images/data/page1/img_sample01.png" alt=""></div>
   </div>
 </template>
 

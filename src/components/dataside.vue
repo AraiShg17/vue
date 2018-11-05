@@ -19,7 +19,6 @@ export default {
   methods: {
     /* ステートの書き換え方1 */
     click (val) {
-      console.log(val.id)
       store.commit('setData', val)
       this.current = this.$store.getters.data
     }

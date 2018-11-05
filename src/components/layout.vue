@@ -6,27 +6,27 @@
       <nav class="layout_nav">
         <ul class="layout_nav_unit">
           <li class="layout_nav_list">
-            <router-link class="layout_nav_link" to="./" exact>
+            <router-link class="layout_nav_link" to="/" exact>
               <span class="layout_nav_link_in">HOME</span>
             </router-link>
           </li>
           <li class="layout_nav_list">
-            <router-link class="layout_nav_link" to="./axios">
+            <router-link class="layout_nav_link" to="/axios">
               <span class="layout_nav_link_in">AXIOS</span>
             </router-link>
           </li>
           <li class="layout_nav_list">
-            <router-link class="layout_nav_link" to="./form">
+            <router-link class="layout_nav_link" to="/form">
               <span class="layout_nav_link_in">FORM</span>
             </router-link>
           </li>
           <li class="layout_nav_list">
-            <router-link class="layout_nav_link" to="./scroll">
+            <router-link class="layout_nav_link" to="/scroll">
               <span class="layout_nav_link_in">SCROLL</span>
             </router-link>
           </li>
           <li class="layout_nav_list">
-            <router-link class="layout_nav_link" to="./data">
+            <router-link class="layout_nav_link" to="/data">
               <span class="layout_nav_link_in">DATA</span>
             </router-link>
           </li>
